@@ -9,7 +9,7 @@ import FancyButton from "./FancyButton";
 
 const App = () => {
   return (
-    <div className="max-w-5xl mx-auto items-center bg-gray-600">
+    <div className="mx-auto items-center bg-gray-200">
       {/* Passing the 'text' prop correctly */}
       {/* <Message />
       <Message />
