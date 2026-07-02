@@ -1,22 +1,35 @@
+import { Routes , Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Collection from "./pages/Collection";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Products from "./pages/Products";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import PlaceOrder from './pages/PlaceOrder';
+import Orders from "./pages/Orders";
+import NavBar from "./components/NavBar";
 
-//import React from 'react';
-
-import FancyButton from "./FancyButton.jsx";
-import Nav from "./Nav.jsx"
-
-// Destructuring 'text' directly from the incoming props object
-//import Message from "./Message";
 
 
 const App = () => {
   return (
-    <div className="mx-auto items-center bg-gray-200">
-      <Nav />
-    <h1 className="text-center text-5xl py-10 text-red-800">Wellcome to React</h1>
+    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      <NavBar />
+      <Routes >
+        <Route  path="/" element={ <Home />}/>
+        <Route  path="/collection" element={ <Collection />}/>
+        <Route  path="/about" element={ <About />}/>
+        <Route  path="/contact" element={ <Contact />}/>
+        <Route  path="/product/:productId" element={ <Products />}/>
+        <Route  path="/cart" element={ <Cart />}/>
+        <Route  path="/login" element={ <Login />}/>
+        <Route  path="/place-order" element={ <PlaceOrder />}/>
+        <Route  path="/orders" element={ <Orders />}/>
+        
 
-    <FancyButton text='jiaul'  />
-    <FancyButton text='click' />
-    <FancyButton text='submit' />
+      </Routes>
+      
     </div>
   );
 };
