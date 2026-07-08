@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import PlaceOrder from './pages/PlaceOrder';
 import Orders from "./pages/Orders";
 import NavBar from "./components/NavBar";
+import SignUp from "./pages/SingUp";
 
 
 
@@ -26,6 +27,8 @@ const App = () => {
         <Route  path="/login" element={ <Login />}/>
         <Route  path="/place-order" element={ <PlaceOrder />}/>
         <Route  path="/orders" element={ <Orders />}/>
+        <Route  path="/login" element={ <Login />}/>
+        <Route  path="/Singup" element={ <SignUp />}/>
         
 
       </Routes>

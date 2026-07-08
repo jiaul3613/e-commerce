@@ -1,13 +1,13 @@
 //import React from 'react'
 
 import Hero from "../components/Hero"
-import Collection from "./Collection"
+//import Collection from "./Collection"
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Collection />
+      {/* <Collection /> */}
     </div>
   )
 }
